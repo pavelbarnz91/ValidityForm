@@ -1,0 +1,120 @@
+html, body {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+}
+
+.wrapper {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    width: 300px;
+}
+
+.hello-guest {
+    font-size: 20px;
+    color: blueviolet;
+    font-family: 'comic sans ms';
+}
+
+.regForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.form-item-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-item {
+    width: 100%;
+    font-size: 16px;
+    padding: 6px;
+    box-sizing: border-box;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.form-item:focus {
+    outline: none;
+}
+
+.form-item:nth-child(n) {
+    margin-bottom: 6px;
+}
+
+.pass {
+    width: calc(100% - 35px);
+}
+
+.see-you-pass {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hidde {
+    background: url('../images/hidden-pass.png') center/cover no-repeat;
+}
+.viev {
+    background: url('../images/viev-pass.png') center/cover no-repeat;
+}
+
+.regForm_btn {
+    font-size: 14px;
+    background-color: rgb(234, 211, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.regForm_btn:hover {
+    background-color: rgb(187, 147, 224);  
+}
+.regForm_btn:active {
+    background-color: rgb(162, 114, 207);  
+}
+
+.tooltip {
+    position: absolute;
+    width: 300px;
+    background-color: rgb(253, 247, 194);
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+
+    top: 0;
+    left: 0;
+
+    color: blueviolet;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready Template</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="hello-guest">Привет, гость</h1>
+
+        <form class="regForm" name="regForm" novalidate>
+            <input class="form-item name" type="text" name="name" placeholder="Имя" required>
+            <input class="form-item lastname" type="text" name="lastname" placeholder="Фамилия" required>
+            <input class="form-item city" type="text" name="city" placeholder="Город" required pattern="^[а-яА-ЯёЁ]+$">
+            <input class="form-item phone" type="number" name="phone" placeholder="Телефон" required>
+            <input class="form-item email" type="email" name="email" placeholder="Почта" required>
+
+            <label class="form-item-label" for="pass1">
+                <div class="see-you-pass hidde"></div>
+                <input class="form-item pass pass1" type="password" name="pass1" placeholder="Придумайте пароль" required>
+            </label>
+
+            <label class="form-item-label" for="pass2">
+                <div class="see-you-pass hidde"></div>
+                <input class="form-item pass pass2" type="password" name="pass2" placeholder="Повторите пароль пароль" required>
+            </label>
+
+            <input class="form-item credit-card" name="credit-card" placeholder="Нам нужна ваша карта" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{12}|3[0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$">
+
+            <div class="regForm__btns">
+                <button class="regForm_btn" type="submit">Отправить</button>
+                <button class="regForm_btn" type="reset">Отменить</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
